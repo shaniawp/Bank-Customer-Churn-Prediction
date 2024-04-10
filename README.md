@@ -28,30 +28,27 @@ nactive customers are more likely to experience churn than regular customers act
 ## Modelling
 ### **Model Comparison**
 ![alt Text](https://github.com/shaniawp/Bank-Customer-Churn-Prediction/blob/main/ME%201.png)
-Recall measures the ratio between the number of employee that are predicted to attrite who actually left the  company, and the number of employee that are predicted to stay but actually left the company. Maximizing recall means minimizing the number of employee who are incorrectly predicted to not attrite.
+Recall measures the ratio between the number of customers that are predicted to leave who actually left the bank company, and the number of customers that are predicted to stay but actually left the bank company. Maximizing recall means minimizing the number of customers who are incorrectly predicted to stay.
 ![alt Text](https://github.com/shaniawp/Bank-Customer-Churn-Prediction/blob/main/ME%202.png)
 
 ## Feature Importance
-The most influential features in the model are MaritalStatus_Married, Age, and TotalWorkingYears.
+The most influential features in the model are Age, NumOfProducts, IsActiveMember.
 ![alt Text](https://github.com/shaniawp/Bank-Customer-Churn-Prediction/blob/main/FI%201.png)
 
 ## Recommendation
-**1. Recomendation  for MaritalStatus** <br>
-   - Develop employee benefits programs by offering additional benefits such as family health insurance, additional leave for family events, or educational support for employees' spouses or children.
-   - Develop a family support program that includes family counseling, financial planning assistance, or work time flexibility to help employees balance their work and personal lives.<br>
+**1. Recomendation  for Age** <br>
+   - 33.97% of Senior customers (40 - 50 years old) are predicted to churn, so we recommend : Offer retirement preparation products with high returns. <br>
    
-**2. Recomendation  for Age** <br>
-   - Develop generation-specific training programs, cross-generational mentoring, or flexible online learning opportunities.
-   - Develop mental health counseling, physical fitness programs, or health seminars for age-relevant issues.
-   - Offer additional retirement savings options or health insurance with additional coverage for employees approaching retirement. <br>
+**2. Recomendation  for NumOfProducts** <br>
+   - 27,71% of Customers with 1 products predicted to churn, it's higher than customers with 2 products. So, It is necessary to evaluate and treat customers with 1 product by promoting cross selling (i.e offer bundling products). <br>
    
-**3. Recomendation  for TotalWorkingYears**
-   - Develop additional training, skill development courses, or mentoring programs to help employees improve their competencies and advance their careers.
-   - Design internal knowledge management programs or collaboration forums to facilitate the exchange of knowledge and experience between employees.
-   - Develop special retention programs that offer incentives or additional benefits to experienced employees to retain them in the long term. <br>
+**3. Recomendation  for IsActiveMember**
+   - Customer who is not an active member are predicted to churn around 26,85 % . It is around 12 percent higher than churn in active member. 
+To increase the activity of inactive member, we recommend to offer low interest and low deposit products to the inactive members. 
+The offering to the inactive members can be displayed through several channels such email, sms, social media.. <br>
 
 ## Business Impact
-Before the model, the attrition rate was 16.1%, and it decreased by 7.7% after the model, resulting in an attrition rate of 8.4%.
+Before the model, the churn rate was 20.37%, and it decreased by 8.65% after the model, resulting in an attrition rate of 11.72%.
 ![alt Text](https://github.com/shaniawp/Bank-Customer-Churn-Prediction/blob/main/BI%201.png)
 ![alt Text](https://github.com/shaniawp/Bank-Customer-Churn-Prediction/blob/main/BI%202.png)
 
