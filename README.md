@@ -1,37 +1,39 @@
-# Bank Customer Churn Prediction
-Employee Attrition is a term used to describe the process or rate at which employees leave an organization or company, either voluntarily (such as resignations) or involuntarily (such as layoffs). It is an important indicator for companies to understand their workforce stability, measure employee satisfaction and engagement levels, and identify factors influencing employee turnover.
+# About the Client
+Technological developments and increasingly fierce competition are pushing companies to not only focus on getting new customers, but also retaining existing customers. Raka Bank is one startup company that focuses on this problem.
+Based on the data the company has, Raka Bank wants to identify which aspects encourage customers to churn so that they can provide the right solution to prevent customers from churning.
+Raka Bank asked Data Lovelace for help to predict and identify factors that encourage customers to churn.
 
 ## The Main Problem
-Out of the 4,410 employees, 16.1% or 710 employees underwent attrition. If the 710 employee attrition is multiplied by $4,700 dollars, the cost amounts to $3,3337,000. So, high employee attrition causes high recruitment costs.
+Out of the 10.000 customers, 20.37% or 2.037 customer churn. If the 2.037 customer churn is multiplied by $200 dollars, the cost amounts to $407.400. So, high customer churn causes high  costs.
 
 ### **Problem Summary**
-- Background : The company wants to know why employee to attrite and which variables need to be addressed immediately. <br>
-- Goals : Decrease the attrition  rate from 16.1% to at least under 10% in order to reduce cost. <br>
-- Objectives : Create a model machine learning to predict potential causes of employee attrition. <br>
-- Business Metrics : Attrition Rate (%)
+- Background : Bank company wants to know which aspects drive the customer to churn and reduce the cost of finding a new banking customer. <br>
+- Goals : Decrease churn rate from 20.37% to at least under 15% in order to reduce cost. <br>
+- Objectives : Create a model machine learning to predict potential customer churn and identity the factors of customer churn. <br>
+- Business Metrics : Churn Rate (%)
 
 ## Exploratory Data Analysis
-- **Attrition by Marital Status** <br>
-The majority of employees are Married at 45.8%, the lowest are Divorce at 22.2%. The highest attrition rate is Single at 12.5% or 359 employees.
+- **Churn Rate by Age** <br>
+The majority of customers are Middle age, the lowest are Elderly, and the highest churn rate is Senior.
 
-- **Attrition by AgeGroup** <br>
-The majority of employees are Middle at 42.1%, the lowest are Elderly at 9.7%. The highest attrition rate is Middle at 13.7% or 472 employees.
+- **Churn Rate by NumOfProduct** <br>
+The majority of customers have 1 NumOfProducts and the lowest is 4. The hight churn rate is customers who have 1 NumOfProduct.
 
-- **Attrition by TotalWorkingYears** <br>
-The majority of employees are Medium Level at 52%, the lowest are Entry Level at 10.5%. The highest attrition rate is Medium Level at 15.7% or 355 employees.
+- **Churn Rate by IsActiveMember** <br>
+nactive customers are more likely to experience churn than regular customers active.
 
 ## Data Preprocessing Flow
-![alt Text](https://github.com/shaniaw16/Employee-Attrition-Analysis/blob/main/DPF.jpg)
+![alt Text](https://github.com/shaniawp/Bank-Customer-Churn-Prediction/blob/main/DP%201.png)
 
 ## Modelling
 ### **Model Comparison**
-![alt Text](https://github.com/shaniaw16/Employee-Attrition-Analysis/blob/main/ME%201.jpg)
+![alt Text](https://github.com/shaniawp/Bank-Customer-Churn-Prediction/blob/main/ME%201.png)
 Recall measures the ratio between the number of employee that are predicted to attrite who actually left the  company, and the number of employee that are predicted to stay but actually left the company. Maximizing recall means minimizing the number of employee who are incorrectly predicted to not attrite.
-![alt Text](https://github.com/shaniaw16/Employee-Attrition-Analysis/blob/main/ME%202.jpg)
+![alt Text](https://github.com/shaniawp/Bank-Customer-Churn-Prediction/blob/main/ME%202.png)
 
 ## Feature Importance
 The most influential features in the model are MaritalStatus_Married, Age, and TotalWorkingYears.
-![alt Text](https://github.com/shaniaw16/Employee-Attrition-Analysis/blob/main/FI%202.jpg)
+![alt Text](https://github.com/shaniawp/Bank-Customer-Churn-Prediction/blob/main/FI%201.png)
 
 ## Recommendation
 **1. Recomendation  for MaritalStatus** <br>
@@ -50,5 +52,8 @@ The most influential features in the model are MaritalStatus_Married, Age, and T
 
 ## Business Impact
 Before the model, the attrition rate was 16.1%, and it decreased by 7.7% after the model, resulting in an attrition rate of 8.4%.
-![alt Text](https://github.com/shaniaw16/Employee-Attrition-Analysis/blob/main/BI%201.jpg)
-![alt Text](https://github.com/shaniaw16/Employee-Attrition-Analysis/blob/main/BI%202.jpg)
+![alt Text](https://github.com/shaniawp/Bank-Customer-Churn-Prediction/blob/main/BI%201.png)
+![alt Text](https://github.com/shaniawp/Bank-Customer-Churn-Prediction/blob/main/BI%202.png)
+
+## Summary
+![alt Text](https://github.com/shaniawp/Bank-Customer-Churn-Prediction/blob/main/SUM.png)
